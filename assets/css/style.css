@@ -125,7 +125,8 @@ header {
 
 /* Beneficios */
 .beneficios {
-    margin-top: -7.625rem;
+    position: absolute;
+    top: 428px;
     display: flex;
     box-shadow: 1px 2px 4px black;
     z-index: 2;
@@ -138,8 +139,9 @@ header {
     place-content: center;
     background: var(--branco);
     text-align: center;
-    width: 25%;
+    width: calc(25% - 3rem);
     height: 244.266px;
+    padding: 0 3rem;
     transition: all 600ms;
 }
 
