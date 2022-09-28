@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+:root {
+    --azul: #2c2cff;
+    --branco: #FFF;
+    --preto: #000;
+    --cinza-claro: #cecece;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 65vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+}
+
+.telefone-header, .local-header {
+    color: var(--branco);
+    display: flex;
+    margin: 0 0.9rem;
+}
+
+.telefone-header h3, .local-header h3 {
+    margin-left: 0.3rem;
+    font-size: 0.7rem;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.cabecalho-informacoes {
+    display: flex;
+}
+
+.logo-header {
+    width: 4.5rem;
+}
+
+.nav {
+    border-top: 1px solid var(--branco);
+}
+
+.nav-lista {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-lista li {
+    display: inline-block;
+}
+
+.nav-lista a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.principal {
+    display: grid;
+    place-content: center;
+    background: url('../img/bg-predios.jpg') center / cover no-repeat;
+    height: 550px;
+    width: 100%;
+}
+
+.principal-texto {
+    color: var(--branco);
+    text-align: center;
+}
+
+.principal-texto h1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.principal-texto strong {
+    font-size: 2rem;
+}
+
+.principal-texto button {
+    color: var(--azul);
+    margin-top: 0.5rem;
+    border: none;
+    background: var(--branco);
+    padding: 0.8rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.principal-texto a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.beneficios {
+    margin-top: -6.25rem;
+    display: flex;
+    box-shadow: 1px 2px 4px black;
+
+}
+
+.card-beneficios {
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    background: var(--branco);
+    text-align: center;
+    font-size: auto;
+    width: 200px;
+    height: 200px;
+
+}
+
