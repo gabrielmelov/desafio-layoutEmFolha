@@ -58,10 +58,6 @@ header {
     width: 4.5rem;
 }
 
-.nav {
-    border-top: 1px solid var(--branco);
-}
-
 .nav-lista {
     padding-top: 0.5rem;
     display: flex;
@@ -69,7 +65,15 @@ header {
 }
 
 .nav-lista li {
+    padding-top: 0.4rem;
     display: inline-block;
+    width: 100%;
+    border-top: 2px solid var(--branco);
+    transition: 600ms;
+}
+
+.nav-lista li:hover {
+    border-top: 2px solid var(--azul);
 }
 
 .nav-lista a {
@@ -93,18 +97,19 @@ header {
 .principal-texto h1 {
     font-size: 1.4rem;
     font-weight: 300;
+    margin-bottom: 0.6rem;
 }
 
 .principal-texto strong {
     font-size: 2rem;
 }
 
-.principal-texto button {
+.principal-texto a {
     color: var(--azul);
     margin-top: 0.5rem;
     border: none;
     background: var(--branco);
-    padding: 0.8rem 3rem;
+    padding: 0.5rem 2.8rem;
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -115,9 +120,10 @@ header {
 }
 
 .beneficios {
-    margin-top: -6.25rem;
+    margin-top: -7.625rem;
     display: flex;
     box-shadow: 1px 2px 4px black;
+    z-index: 2;
 
 }
 
@@ -127,9 +133,15 @@ header {
     place-content: center;
     background: var(--branco);
     text-align: center;
-    font-size: auto;
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    height: 244.266px;
+    transition: all 600ms;
+}
 
+.card-beneficios:hover {
+    color: var(--branco);
+    background: var(--azul);
+    transform: scale(1.1);
+    z-index: 1;
 }
 
