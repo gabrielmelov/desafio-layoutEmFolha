@@ -68,7 +68,7 @@ header {
 }
 
 .nav-lista li {
-    padding-top: 0.4rem;
+    padding-top: 0.5rem;
     display: inline-block;
     width: 100%;
     border-top: 2px solid var(--branco);
@@ -152,3 +152,25 @@ header {
     z-index: 1;
 }
 
+/* Vantagens */
+.vantagens {
+    height: 550px;
+}
+
+.vantagens-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13%;
+}
+
+.vantagens-steps {
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vantagens-steps input {
+    width: 100%;
+    position: relative;
+}
